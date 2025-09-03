@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, SafeAreaView } from 'react-native';
-import { styles } from '@/styles/_joinstyle';
-import { HEROLOGOGREEN, GOOGLELOGO, FACEBOOKLOGO } from '@/constants';
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  Image,
+  SafeAreaView,
+} from "react-native";
+import { styles } from "@/styles/_join";
+import { HEROLOGOGREEN, GOOGLELOGO, FACEBOOKLOGO } from "@/constants";
 
 export default function Join() {
-  const [fullName, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -61,7 +68,7 @@ export default function Join() {
               secureTextEntry={!showPassword}
             />
             <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
-              <Text>{showPassword ? '👁️' : '👁️‍🗨️'}</Text>
+              <Text>{showPassword ? "👁️" : "👁️‍🗨️"}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -81,12 +88,16 @@ export default function Join() {
 
       {/* Secondary Buttons */}
       <View style={styles.secondaryButtonGroup}>
-        <TouchableOpacity style={[styles.secondaryButton, { borderColor: '#E9E9E9' }]}>
+        <TouchableOpacity
+          style={[styles.secondaryButton, { borderColor: "#E9E9E9" }]}
+        >
           <Image source={GOOGLELOGO} style={{ width: 24, height: 24 }} />
           <Text style={styles.secondaryButtonText}>Continue with Google</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={[styles.secondaryButton, { borderColor: '#E9E9E9' }]}>
+        <TouchableOpacity
+          style={[styles.secondaryButton, { borderColor: "#E9E9E9" }]}
+        >
           <Image source={FACEBOOKLOGO} style={{ width: 24, height: 24 }} />
           <Text style={styles.secondaryButtonText}>Continue with Facebook</Text>
         </TouchableOpacity>
