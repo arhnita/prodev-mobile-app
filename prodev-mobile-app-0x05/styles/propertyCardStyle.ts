@@ -1,3 +1,5 @@
+import { StyleSheet } from "react-native";
+
 const styles = StyleSheet.create({
     container: {
       height: 400,
@@ -30,7 +32,7 @@ const styles = StyleSheet.create({
     rateText: {
       fontSize: 20,
       color: "#fff",
-      fontWeight: 500,
+      fontWeight: "500",
       marginLeft: 4,
     },
     priceGroup: {
@@ -43,19 +45,19 @@ const styles = StyleSheet.create({
     },
     priceText: {
       fontSize: 17,
-      fontWeight: 500,
+      fontWeight: "500",
     },
     cardTextGroup: {
       width: 205,
     },
     cardLargeText: {
       fontSize: 30,
-      fontWeight: 600,
+      fontWeight: "600",
       color: "#fff",
     },
     cardSmallText: {
       fontSize: 15,
-      fontWeight: 400,
+      fontWeight: "400",
       color: "#fff",
     },
     cardGroup: {
